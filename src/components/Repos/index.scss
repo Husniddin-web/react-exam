@@ -1,0 +1,43 @@
+.repo-wrappers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 60vw;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.public {
+    background-color: #eeeeee;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+
+.repo-right-item {
+    background-color: #dddddd;
+    padding: 0px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+
+        border-right: 1px solid;
+    }
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    // align-items: center;
+    // flex-direction: row;
+}
