@@ -8,10 +8,11 @@ import { BsStar } from "react-icons/bs";
 import "./index.scss";
 import { NavLink } from "react-router-dom";
 import { UserContext } from "../../Context";
-
+import { RepoContext } from "../../Context/Repo";
 const index = () => {
   const elementRef = useRef();
   const user_info = useRef();
+  const { repo } = useContext(RepoContext);
   useEffect(() => {
     const main = elementRef.current;
     const div = user_info.current;
@@ -43,7 +44,10 @@ const index = () => {
               <span>
                 <BiBookBookmark className="main-icon" />
               </span>
-              <p>Repositories</p>
+              <p>
+                Repositories{" "}
+                <span className="repo-length">{user.public_repos}</span>
+              </p>
             </li>
           </NavLink>
 

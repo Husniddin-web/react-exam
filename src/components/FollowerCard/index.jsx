@@ -6,7 +6,6 @@ import { HiBuildingOffice } from "react-icons/hi2";
 import Loader from "../../components/Loader";
 
 const index = ({ data }) => {
-  console.log(data);
   // avatar_url
   // html_url
   // login

@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { MdOutlinePeople } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdOutlineAddLocation } from "react-icons/md";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 import "./style.scss";
 import User from "../../assets/images/hacker-bg.jpg";
 import { Link } from "react-router-dom";
 
 const index = ({ data }) => {
-  console.log(data);
   const {
     login,
     avatar_url,
@@ -57,8 +57,12 @@ const index = ({ data }) => {
           {twiter_username ? "" : twiter_username}
         </li>
         <li className="sidenar-item">
-          {location ? <HiOutlineLocationMarker /> : ""}
-          {location ? location : ""}
+          {bio ? <HiOutlineLocationMarker /> : ""}
+          {bio ? bio : ""}
+        </li>
+        <li className="sidenar-item">
+          {email ? <MdOutlineAlternateEmail /> : ""}
+          {email ? email : ""}
         </li>
       </ul>
     </div>

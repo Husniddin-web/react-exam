@@ -21,8 +21,9 @@ const index = () => {
     navigate("/userlist");
     api.getSearch(value).then((res) => {
       setUserSearch(res.data.items);
-      console.log(searchUser);
     });
+    setValue("");
+    result.current.classList.remove("opacity");
   };
   const handleD = (e) => {
     return result.current.classList.add("opacity");

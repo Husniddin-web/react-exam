@@ -16,6 +16,9 @@ const index = () => {
   };
   return (
     <div className="card p-5 mx-auto shadow mt-5 w-50">
+      <h2 className="text-center mb-5 text-danger">
+        Search for result :{searchUser.length} users
+      </h2>
       {searchUser.length > 0 ? (
         searchUser.map((e) => {
           return (

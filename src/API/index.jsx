@@ -21,8 +21,4 @@ export const api = {
     );
     return data;
   },
-  getUsers: async (user_name) => {
-    let data = await axios.get(` https://api.github.com/users/${user_name}`);
-    return data;
-  },
 };
